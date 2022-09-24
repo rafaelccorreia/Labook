@@ -1,0 +1,45 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+###
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Rafael Correia",
+    "email": "rafa@gmail.com"
+}
+
+###
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "rafa@gmail.com",
+    "password": "senh@312"
+}
+
+###
+POST http://localhost:3003/posts/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiMmI3NjA1LWFhZGItNGM5MS04NmJmLTM0NWMwNDlhZTg3NCIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NjIwMTgsImV4cCI6MTY2NDA0ODQxOH0.MWZpb3xWD662B_4s5I8a89xy_d_eIuszEjDg2ci9oL4
+
+{
+    "content": ""
+}
+
+###
+GET http://localhost:3003/posts/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiMmI3NjA1LWFhZGItNGM5MS04NmJmLTM0NWMwNDlhZTg3NCIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NjY5MDQsImV4cCI6MTY2NDA1MzMwNH0.SPuvSggLWKbQHkaC-Ds95TycMbfAeQVbMlo0Gq7O8GI
+
+###
+PUT http://localhost:3003/posts/like/d4a36aae-bf24-44a3-b7be-716cd3630216
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiMmI3NjA1LWFhZGItNGM5MS04NmJmLTM0NWMwNDlhZTg3NCIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NjY5MDQsImV4cCI6MTY2NDA1MzMwNH0.SPuvSggLWKbQHkaC-Ds95TycMbfAeQVbMlo0Gq7O8GI
+
+###
+PUT http://localhost:3003/posts/unlike/d4a36aae-bf24-44a3-b7be-716cd3630216
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiMmI3NjA1LWFhZGItNGM5MS04NmJmLTM0NWMwNDlhZTg3NCIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NjY5MDQsImV4cCI6MTY2NDA1MzMwNH0.SPuvSggLWKbQHkaC-Ds95TycMbfAeQVbMlo0Gq7O8GI
+
+###
+DELETE http://localhost:3003/posts/delete/202
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiMmI3NjA1LWFhZGItNGM5MS04NmJmLTM0NWMwNDlhZTg3NCIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjM5NjY5MDQsImV4cCI6MTY2NDA1MzMwNH0.SPuvSggLWKbQHkaC-Ds95TycMbfAeQVbMlo0Gq7O8GI
